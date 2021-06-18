@@ -14,7 +14,11 @@ export default {
 </script>
 
 <style lang="scss">
-#app {
+#test {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999999999999999999;
   color: red;
   background-color: yellow;
 }

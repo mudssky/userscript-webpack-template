@@ -4,7 +4,7 @@ const { VueLoaderPlugin } = require('vue-loader/dist/index')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin')
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin')
-
+// const webpack = require('webpack')
 module.exports = {
   context: __dirname, // to automatically find tsconfig.json
   // resolve: {
@@ -70,6 +70,9 @@ module.exports = {
     new ForkTsCheckerWebpackPlugin(),
     new CleanWebpackPlugin(),
     new FriendlyErrorsWebpackPlugin(),
+    // new webpack.DefinePlugin({
+
+    // }),
   ],
   devServer: {
     port: 3000,

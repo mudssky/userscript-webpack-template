@@ -1,11 +1,36 @@
 // ==UserScript==
-// @name         sample
-// @namespace    
-// @version      0.1
-// @description  sample
+// @name         定义脚本的名字,可以在后面加上区域后缀实现国际化,比如@name:zh ,@name:en
+// @namespace    The namespace of the script. 
+// @version      0.1  脚本的版本号,用于版本检查
 // @author       mudssky
-// @include       *://*/*
+// @description  脚本的简短表述,可以在后面添加后缀实现国际化,比如@name:en
+// @author       mudssky
 // @grant        none
+// 如果namespace是以http协议开头的,那么下面这四个都是用namespace
+// @source
+// @website
+// @homepage
 // @homepageURL 
+//下面3个用于低分辨率图标
+// @icon
+// @iconURL
+// @defaulticon
+// 64x64 像素的图标
+// @icon64 
+// @icon64URL
+// @updateURL 更新脚本的地址,需要包含version tag 用于版本检查
+// @include       *://*/*  添加脚本允许运行的页面,注意不支持带#的url
+// @match     近似于include tag
+// @exclude 除外某些包含在 include里的url
+// @require 在脚本运行之前加载的JavaScript文件,里面使用的'use strict'可能会影响到userscript的代码
+// @resource 预加载的资源,可以通过GM_getResourceURL和GM_getResourceText访问
+// @connect 定义 GM_xmlhttpRequest能访问的域名
+// @run-at 定义脚本注入的时机  默认值是@run-at document-idle
+// @grant 申请GM函数和unsafeWindow权限,默认是none,如果值为none,将不使用沙箱,脚本会被注入到网页执行
+// @antifeature 公开自己的脚本是否有盈利,挖矿,广告之类行为
+// @noframes 使脚本在主页面运行.而不是iframes
+// @unwrap  chrome 环境下这个标签没有作用
+// @nocompat  例子// @nocompat Chrome
+// @downloadURL 定义检测到更新后,脚本下载的url,如果定义为none将关闭更新检查
 // @supportURL       
 // ==/UserScript==

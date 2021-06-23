@@ -1,0 +1,11 @@
+// ==UserScript==
+// @name         sample
+// @namespace    
+// @version      0.1
+// @description  sample
+// @author       mudssky
+// @include       *://*/*
+// @grant        none
+// @homepageURL 
+// @supportURL       
+// ==/UserScript==

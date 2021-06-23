@@ -7,6 +7,7 @@
     "build": "webpack",
     "dev": "webpack --config ./webpack.config.js ",
     "start": "webpack serve --config ./webpack.config.js",
+    "watch": "npx tsc --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

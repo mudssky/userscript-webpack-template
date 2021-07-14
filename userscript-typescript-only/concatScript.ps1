@@ -2,6 +2,9 @@ param(
 	[string]$baseDir = 'src',
 	[string]$outPath = 'dist/dist.js'
 )
+if (-not (Test-Path dist)) {
+	mkdir dist
+}
 $userscriptBasePath = Join-Path -Path  $baseDir  -ChildPath userscriptHead
 $indexPath = Join-Path -Path $baseDir -ChildPath index.js
 npx tsc 
